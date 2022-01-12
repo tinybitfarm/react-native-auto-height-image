@@ -1,13 +1,10 @@
 {
   "name": "react-native-auto-height-image",
-  "version": "3.2.6",
+  "version": "3.2.7",
   "description": "react-native auto height image",
   "main": "./index.js",
   "typings": "./index.d.ts",
   "scripts": {
-    "release": "standard-version && git push --follow-tags && npm publish",
-    "release:beta": "standard-version --prerelease beta && git push --follow-tags && npm publish",
-    "postinstall": "husky install",
     "prepublishOnly": "pinst --disable",
     "postpublish": "pinst --enable"
   },
@@ -30,7 +27,6 @@
   "devDependencies": {
     "@commitlint/cli": "^12.0.0",
     "@commitlint/config-conventional": "^12.0.0",
-    "husky": "6",
     "lint-staged": "^11.0.0",
     "pinst": "^2.1.4",
     "prettier": "^2.0.0",
@@ -44,8 +40,6 @@
   },
   "lint-staged": {
     "**/**.{js,json,md,ts}": [
-      "prettier --write",
-      "git add"
     ]
   },
   "prettier": {
